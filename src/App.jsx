@@ -17,8 +17,8 @@ function App() {
     const obj = {
       "userId": 1,
       "id": 1,
-      "title": "Miau",
-      "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+      "title": "eto novii element",
+      "body": "eto novii element kotorii dobavilsua cherez useState"
     }
     arrCopy.push(obj)
     setArr(arrCopy)
