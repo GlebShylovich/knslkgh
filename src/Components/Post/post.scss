@@ -1,0 +1,25 @@
+.post{
+    position: relative;
+    margin: 40px auto;
+    width: 40%;
+    padding: 10px;
+    background-color: rgb(243, 243, 243);
+    border-radius: 10px;
+    h2{
+        margin: 50px 0 20px 0;
+    }
+    .closeBtn{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 10px;
+        right: 15px;
+        font-size: 16px;
+        transition: 0.3s ease-in-out;
+        &:hover{
+            transition: 0.3s ease-in-out;
+            color: red;
+        }
+    }
+}
