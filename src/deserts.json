@@ -1,0 +1,69 @@
+[
+    {
+        "name": "Chocolate Lava Cake",
+        "price": "$7.99",
+        "weight": "150g",
+        "ingredients": [
+            "chocolate",
+            "butter",
+            "sugar",
+            "eggs",
+            "flour"
+        ]
+    },
+    {
+        "name": "New York Cheesecake",
+        "price": "$9.99",
+        "weight": "180g",
+        "ingredients": [
+            "cream cheese",
+            "sugar",
+            "eggs",
+            "sour cream",
+            "vanilla extract"
+        ]
+    },
+    {
+        "name": "Tiramisu",
+        "price": "$11.99",
+        "weight": "200g",
+        "ingredients": [
+            "ladyfingers",
+            "espresso",
+            "mascarpone cheese",
+            "cocoa powder"
+        ]
+    },
+    {
+        "name": "Strawberry Shortcake",
+        "price": "$8.99",
+        "weight": "160g",
+        "ingredients": [
+            "shortcake biscuits",
+            "whipped cream",
+            "fresh strawberries"
+        ]
+    },
+    {
+        "name": "Mango Sorbet",
+        "price": "$5.99",
+        "weight": "120g",
+        "ingredients": [
+            "mango puree",
+            "sugar",
+            "lemon juice"
+        ]
+    },
+    {
+        "name": "Pecan Pie",
+        "price": "$13.99",
+        "weight": "220g",
+        "ingredients": [
+            "pecans",
+            "corn syrup",
+            "brown sugar",
+            "butter",
+            "eggs"
+        ]
+    }
+]

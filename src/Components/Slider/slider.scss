@@ -1,0 +1,42 @@
+.slider {
+    width: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    margin-bottom: 50px;
+
+    .slider__buttons {
+        position: absolute;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        & button {
+            background: none;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-basis: 5%;
+            min-height: 500px;
+            & img {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+
+    .slider__body {
+        width: 100%;
+
+        & img {
+            display: block;
+            width: 100%;
+            max-height: 500px;
+            border-radius: 18px;
+        }
+    }
+}

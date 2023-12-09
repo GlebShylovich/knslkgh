@@ -1,0 +1,98 @@
+[
+    {
+        "name": "Rancher's Choice",
+        "price": "$12.99",
+        "weight": "200g",
+        "ingredients": {
+            "bun": "rye",
+            "meat": "beef",
+            "cheese": "cheddar",
+            "vegetables": [
+                "tomato",
+                "lettuce",
+                "onion"
+            ],
+            "sauce": "barbecue"
+        }
+    },
+    {
+        "name": "Wheaty Chicken Bliss",
+        "price": "$14.99",
+        "weight": "220g",
+        "ingredients": {
+            "bun": "whole wheat",
+            "meat": "chicken",
+            "cheese": "gouda",
+            "vegetables": [
+                "cucumber",
+                "tomato",
+                "red onion"
+            ],
+            "sauce": "mustard-honey"
+        }
+    },
+    {
+        "name": "Sesame Lamb Feast",
+        "price": "$18.99",
+        "weight": "250g",
+        "ingredients": {
+            "bun": "sesame",
+            "meat": "lamb",
+            "cheese": "feta",
+            "vegetables": [
+                "bell pepper",
+                "olives",
+                "watercress"
+            ],
+            "sauce": "tomato"
+        }
+    },
+    {
+        "name": "Potato Pork Gala",
+        "price": "$13.99",
+        "weight": "180g",
+        "ingredients": {
+            "bun": "potato",
+            "meat": "pork",
+            "cheese": "gouda",
+            "vegetables": [
+                "cabbage",
+                "tomato",
+                "cucumber"
+            ],
+            "sauce": "sour cream"
+        }
+    },
+    {
+        "name": "Multigrain Duck Elegance",
+        "price": "$22.99",
+        "weight": "230g",
+        "ingredients": {
+            "bun": "multigrain",
+            "meat": "duck",
+            "cheese": "brie",
+            "vegetables": [
+                "arugula",
+                "grilled pepper",
+                "red onion"
+            ],
+            "sauce": "honey-mustard"
+        }
+    },
+    {
+        "name": "Nutty Turkey Symphony",
+        "price": "$16.99",
+        "weight": "190g",
+        "ingredients": {
+            "bun": "prune-walnut",
+            "meat": "turkey",
+            "cheese": "gruyere",
+            "vegetables": [
+                "avocado",
+                "tomato",
+                "mixed greens"
+            ],
+            "sauce": "cipollini"
+        }
+    }
+]

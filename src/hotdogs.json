@@ -1,0 +1,90 @@
+[
+    {
+        "name": "Classic Frankfurter",
+        "price": "$5.99",
+        "weight": "150g",
+        "ingredients": {
+            "sausage": "beef",
+            "toppings": [
+                "mustard",
+                "ketchup",
+                "diced onions"
+            ],
+            "bun": "soft"
+        }
+    },
+    {
+        "name": "Gourmet Bratwurst Delight",
+        "price": "$7.99",
+        "weight": "180g",
+        "ingredients": {
+            "sausage": "bratwurst",
+            "toppings": [
+                "sauerkraut",
+                "Dijon mustard",
+                "caraway seeds"
+            ],
+            "bun": "pretzel"
+        }
+    },
+    {
+        "name": "Chili Cheese Dawg",
+        "price": "$6.99",
+        "weight": "160g",
+        "ingredients": {
+            "sausage": "spicy",
+            "toppings": [
+                "chili",
+                "cheddar cheese",
+                "chopped green onions"
+            ],
+            "bun": "sesame seed"
+        }
+    },
+    {
+        "name": "BBQ Bacon Ranch Dog",
+        "price": "$8.49",
+        "weight": "170g",
+        "ingredients": {
+            "sausage": "savory",
+            "toppings": [
+                "crispy bacon",
+                "barbecue sauce",
+                "ranch dressing",
+                "shredded lettuce"
+            ],
+            "bun": "toasted"
+        }
+    },
+    {
+        "name": "Mexican Street Dog",
+        "price": "$7.49",
+        "weight": "150g",
+        "ingredients": {
+            "sausage": "zesty",
+            "toppings": [
+                "grilled jalapeños",
+                "diced tomatoes",
+                "onions",
+                "cilantro",
+                "chipotle mayo"
+            ],
+            "bun": "corn tortilla"
+        }
+    },
+    {
+        "name": "Hawaiian Luau Dog",
+        "price": "$9.99",
+        "weight": "200g",
+        "ingredients": {
+            "sausage": "tropical",
+            "toppings": [
+                "grilled pineapple ring",
+                "teriyaki glaze",
+                "crispy bacon",
+                "green onions"
+            ],
+            "bun": "Hawaiian roll"
+        }
+    }
+]

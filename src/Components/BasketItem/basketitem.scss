@@ -1,0 +1,78 @@
+.basket__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0;
+    border-top: 1px solid #F2F2F3;
+
+    .basket__item-image {
+        border-radius: 8px;
+        width: 64px;
+        height: 52px;
+        flex-shrink: 0;
+    }
+
+    .basket__item-desc {
+        display: flex;
+        flex-direction: column;
+
+        .basket__item-name {
+            color: #000;
+            font-family: Nunito;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        .basket__item-weight {
+            color: #B1B1B1;
+            font-family: Nunito;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        .basket__item-price {
+            color: #000;
+            font-family: Nunito;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+
+    .basket__item-amount {
+        border-radius: 12px;
+        background: #F2F2F3;
+        width: 84px;
+        height: 40px;
+        flex-shrink: 0;
+        padding: 9px 12px;
+        gap: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        & span {
+            color: #000;
+            font-family: Nunito;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        & p {
+            color: #000;
+
+            font-family: Nunito;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+}
