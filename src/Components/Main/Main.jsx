@@ -11,6 +11,7 @@ import Shawarma from '../Shawarma/Shawarma'
 import Pizza from '../Pizza/Pizza'
 import Deserts from '../Deserts/Deserts'
 import Slider from '../Slider/Slider'
+import Sauces from '../Sauces/Sauces'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import {tabArrImg} from '../../picture'
 
@@ -54,6 +55,7 @@ export default function Main() {
                                 <Route path='/shawarma' element={<Shawarma />} />
                                 <Route path='/pizza' element={<Pizza />} />
                                 <Route path='/deserts' element={<Deserts />} />
+                                <Route path='/sauces' element={<Sauces />} />
                             </Routes>
                         </div>
                     </div>

@@ -52,6 +52,13 @@ import desert6 from './assets/img/pecanPieDesert.png'
 import slider1 from './assets/img/lavaCakeSlider.png'
 import slider2 from './assets/img/kebabSlider.png'
 import slider3 from './assets/img/lambBurgerSlider.png'
+//sauces
+import sauce1 from './assets/img/marinaraSauce.png'
+import sauce2 from './assets/img/garlicSauce.png'
+import sauce3 from './assets/img/spicyMayoSauce.png'
+import sauce4 from './assets/img/teriyakiSauce.png'
+import sauce5 from './assets/img/pestoSauce.png'
+import sauce6 from './assets/img/srirachaSauce.png'
 //burgers export
 export const arrBurgerImg = [burger1, burger2, burger3, burger4, burger5, burger6];
 //tabs export
@@ -68,3 +75,5 @@ export const arrPizzaImg = [ pizza1, pizza2, pizza3, pizza4, pizza5, pizza6 ];
 export const arrDesertImg = [ desert1, desert2, desert3, desert4, desert5, desert6 ];
 //slider export
 export const arrSlider = [ slider1, slider2, slider3 ];
+//sauces export
+export const arrSaucesImg = [ sauce1, sauce2, sauce3, sauce4, sauce5, sauce6 ];
