@@ -1,7 +1,6 @@
 import './main.scss'
 import { useState, useEffect } from 'react'
 import tabData from '../../tabs.json'
-import sliderData from '../../slider.json'
 import Tab from '../Tab/Tab'
 import Basket from '../Basket/Basket'
 import Burgers from '../Burgers/Burgers'
