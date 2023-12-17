@@ -1,12 +1,11 @@
 import './sauces.scss'
 import { useState, useEffect } from 'react'
-import data from "../../sauces.json"
 import Card from '../Card/Card'
 
 import {arrSaucesImg} from '../../picture'
 
-export default function Sauces() {
-    const [arr, setArr] = useState(data);
+export default function Sauces({saucesData}) {
+    const [arr, setArr] = useState(saucesData);
     console.log(data);
 
     useEffect(() => {

@@ -1,17 +1,25 @@
 import { useState, useEffect } from 'react'
-import data from "../../deserts.json"
 import Card from '../Card/Card'
 import './deserts.scss'
+import Modal from '../Modal/Modal';
+import { arrDesertImg } from '../../picture'
 
-import {arrDesertImg} from '../../picture'
+export default function Deserts({ desertsData }) {
+    const [isOpenModal, setIsOpenModal] = useState(false);
+    const [arr, setArr] = useState(desertsData);
+    const [objModal, setObjModal] = useState({});
 
-export default function Burgers() {
-    const [arr, setArr] = useState(data);
-    console.log(data);
+    const openModal = () => {
+        setIsOpenModal(true);
+    };
+
+    const closeModal = () => {
+        setIsOpenModal(false);
+    };
 
     useEffect(() => {
         addImageToCard();
-    },[])
+    }, [])
     function addImageToCard() {
         const arrCopy = [...arr]
         const newArrCard = arrCopy.map((item, index) => {
@@ -30,10 +38,11 @@ export default function Burgers() {
             <div className="deserts__container">
                 {
                     arr.map((item, index) => (
-                        <Card item={item} key={index} />
+                        <Card item={item} key={index} openModal={openModal} setObjModal={setObjModal} />
                     ))
                 }
             </div>
+            {isOpenModal && <Modal closeModal={closeModal} content={objModal} />}
         </div>
     )
 }

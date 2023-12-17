@@ -1,14 +1,13 @@
-// Burgers.jsx
 import React, { useState, useEffect } from 'react';
-import data from '../../burgers.json';
 import Card from '../Card/Card';
 import Modal from '../Modal/Modal';
 import { arrBurgerImg } from '../../picture';
 import './burgers.scss';
 
-export default function Burgers() {
+export default function Burgers({burgersData}) {
   const [isOpenModal, setIsOpenModal] = useState(false);
-  const [arr, setArr] = useState(data);
+  const [objModal, setObjModal] = useState({});
+  const [arr, setArr] = useState(burgersData);
 
   useEffect(() => {
     addImageToCard();
@@ -36,10 +35,10 @@ export default function Burgers() {
       <h1>Burgers</h1>
       <div className="burgers__container">
         {arr.map((item, index) => (
-          <Card item={item} key={index} openModal={openModal} />
+          <Card item={item} key={index} openModal={openModal} setObjModal={setObjModal} />
         ))}
       </div>
-      {isOpenModal && <Modal closeModal={closeModal} />}
+      {isOpenModal && <Modal closeModal={closeModal}  content={objModal}/>}
     </div>
   );
 }

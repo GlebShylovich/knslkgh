@@ -1,12 +1,11 @@
 import { useState, useEffect } from 'react'
-import data from "../../shawarma.json"
 import Card from '../Card/Card'
 import './shawarma.scss'
 
 import {arrShawarmaImg} from '../../picture'
 
-export default function Burgers() {
-    const [arr, setArr] = useState(data);
+export default function Shawarma({shawarmaData}) {
+    const [arr, setArr] = useState(shawarmaData);
     console.log(data);
 
     useEffect(() => {

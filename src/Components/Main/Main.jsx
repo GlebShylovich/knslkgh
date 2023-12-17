@@ -14,7 +14,7 @@ import Sauces from '../Sauces/Sauces'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import {tabArrImg} from '../../picture'
 
-export default function Main() {
+export default function Main({burgersData, hotdogsData, snacksData, shawarmaData, pizzasData, desertsData, saucesData}) {
     const [arr, setArr] = useState(tabData);
     useEffect(() => {
         addImageToTab();
@@ -48,13 +48,13 @@ export default function Main() {
                         <Basket />
                         <div className="products">
                             <Routes>
-                                <Route path='/' element={<Burgers />} />
-                                <Route path='/hotdogs' element={<HotDogs />} />
-                                <Route path='/snacks' element={<Snacks />} />
-                                <Route path='/shawarma' element={<Shawarma />} />
-                                <Route path='/pizza' element={<Pizza />} />
-                                <Route path='/deserts' element={<Deserts />} />
-                                <Route path='/sauces' element={<Sauces />} />
+                                <Route path='/' element={<Burgers burgersData={burgersData}/>} />
+                                <Route path='/hotdogs' element={<HotDogs hotdogsData={hotdogsData}/>} />
+                                <Route path='/snacks' element={<Snacks snacksData={snacksData}/>} />
+                                <Route path='/shawarma' element={<Shawarma shawarmaData={shawarmaData}/>} />
+                                <Route path='/pizza' element={<Pizza pizzasData={pizzasData}/>} />
+                                <Route path='/deserts' element={<Deserts desertsData={desertsData}/>} />
+                                <Route path='/sauces' element={<Sauces saucesData={saucesData}/>} />
                             </Routes>
                         </div>
                     </div>

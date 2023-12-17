@@ -1,12 +1,11 @@
 import { useState ,useEffect } from 'react'
-import data from "../../snacks.json"
 import Card from '../Card/Card'
 import './snacks.scss'
 
 import {arrSnackImg} from '../../picture'
 
-export default function Burgers() {
-    const [arr, setArr] = useState(data);
+export default function Snacks({snacksData}) {
+    const [arr, setArr] = useState(snacksData);
     console.log(data);
 
     useEffect(() => {

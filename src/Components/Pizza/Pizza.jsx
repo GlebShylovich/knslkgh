@@ -1,13 +1,12 @@
 import { useState, useEffect } from 'react'
-import data from "../../pizza.json"
 import Card from '../Card/Card'
 import './pizza.scss'
 
 import {arrPizzaImg} from '../../picture'
 
-export default function Burgers() {
-    const [arr, setArr] = useState(data);
-    console.log(data);
+export default function Pizzas({pizzasData}) {
+    const [arr, setArr] = useState(pizzasData);
+    const [isOpenModal, setIsOpenModal] = useState(false);
 
     useEffect(() => {
         addImageToCard();

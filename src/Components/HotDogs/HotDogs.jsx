@@ -1,17 +1,26 @@
 import { useState, useEffect } from 'react'
-import data from "../../hotdogs.json"
+import Modal from '../Modal/Modal'
 import Card from '../Card/Card'
 import './hotdogs.scss'
 
-import {arrHotdogImg} from '../../picture'
+import { arrHotdogImg } from '../../picture'
 
-export default function Burgers() {
-    const [arr, setArr] = useState(data);
-    console.log(data);
+export default function HotDogs({ hotdogsData }) {
+    const [isOpenModal, setIsOpenModal] = useState(false);
+    const [objModal, setObjModal] = useState({});
+    const [arr, setArr] = useState(hotdogsData);
+
+    const openModal = () => {
+        setIsOpenModal(true);
+    };
+
+    const closeModal = () => {
+        setIsOpenModal(false);
+    };
 
     useEffect(() => {
         addImageToCard();
-    },[])
+    }, [])
     function addImageToCard() {
         const arrCopy = [...arr]
         const newArrCard = arrCopy.map((item, index) => {
@@ -30,10 +39,11 @@ export default function Burgers() {
             <div className="hotdogs__container">
                 {
                     arr.map((item, index) => (
-                        <Card item={item} key={index} />
+                        <Card item={item} key={index} openModal={openModal} setObjModal={setObjModal} />
                     ))
                 }
             </div>
+            {isOpenModal && <Modal closeModal={closeModal} content={objModal} />}
         </div>
     )
 }
