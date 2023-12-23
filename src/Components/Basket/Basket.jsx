@@ -2,6 +2,7 @@ import './basket.scss'
 import scooter from '../../assets/img/basket-delivery.png'
 
 export default function Basket({ basket, plusBasket, minusBasket }) {
+    const total = basket.reduce((acc, item) => acc + item.price * item.count, 0);
     return (
         <div className="basket">
             <div className="basket__top">
@@ -18,7 +19,7 @@ export default function Basket({ basket, plusBasket, minusBasket }) {
                             <div className="basket__item-info">
                                 <p className='basket__item-name'>{item.name}</p>
                                 <p className='basket__item-weight'>{item.weight}</p>
-                                <p className='basket__item-price'>{item.price}</p>
+                                <p className='basket__item-price'>{item.price * item.count}</p>
                             </div>
                             <div className="basket__item-count">
                                 <button onClick={() => minusBasket(item.id)}>-</button>
@@ -31,7 +32,7 @@ export default function Basket({ basket, plusBasket, minusBasket }) {
             </div>
             <div className="basket__total">
                 <p className="basket__total-text">Total</p>
-                <p className="basket__total-price">$</p>
+                <p className="basket__total-price">{total}$</p>
             </div>
             <button className="basket__btn">Make an order</button>
             <div className="basket__delivery">

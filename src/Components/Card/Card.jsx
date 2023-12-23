@@ -2,7 +2,7 @@ import './card.scss'
 
 export default function Card({ item, openModal, setObjModal, addBasket }) {
   return (
-    <div className="card" onClick={() => {openModal(); setObjModal(item)}}>
+    <div className="card" onClick={() => { openModal(); setObjModal(item) }}>
       <div className="card__img">
         <img src={item.image} alt="img" />
       </div>
