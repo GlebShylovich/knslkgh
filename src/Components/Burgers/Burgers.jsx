@@ -4,7 +4,7 @@ import Modal from '../Modal/Modal';
 import { arrBurgerImg } from '../../picture';
 import './burgers.scss';
 
-export default function Burgers({burgersData}) {
+export default function Burgers({burgersData, addBasket}) {
   const [isOpenModal, setIsOpenModal] = useState(false);
   const [objModal, setObjModal] = useState({});
   const [arr, setArr] = useState(burgersData);
@@ -35,7 +35,7 @@ export default function Burgers({burgersData}) {
       <h1>Burgers</h1>
       <div className="burgers__container">
         {arr.map((item, index) => (
-          <Card item={item} key={index} openModal={openModal} setObjModal={setObjModal} />
+          <Card addBasket={addBasket} item={item} key={index} openModal={openModal} setObjModal={setObjModal} />
         ))}
       </div>
       {isOpenModal && <Modal closeModal={closeModal}  content={objModal}/>}

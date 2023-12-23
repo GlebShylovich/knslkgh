@@ -5,7 +5,7 @@ import './hotdogs.scss'
 
 import { arrHotdogImg } from '../../picture'
 
-export default function HotDogs({ hotdogsData }) {
+export default function HotDogs({ hotdogsData, addBasket }) {
     const [isOpenModal, setIsOpenModal] = useState(false);
     const [objModal, setObjModal] = useState({});
     const [arr, setArr] = useState(hotdogsData);
@@ -39,7 +39,7 @@ export default function HotDogs({ hotdogsData }) {
             <div className="hotdogs__container">
                 {
                     arr.map((item, index) => (
-                        <Card item={item} key={index} openModal={openModal} setObjModal={setObjModal} />
+                        <Card addBasket={addBasket} item={item} key={index} openModal={openModal} setObjModal={setObjModal} />
                     ))
                 }
             </div>

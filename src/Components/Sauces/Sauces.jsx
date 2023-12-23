@@ -1,12 +1,22 @@
 import './sauces.scss'
 import { useState, useEffect } from 'react'
 import Card from '../Card/Card'
+import Modal from '../Modal/Modal'
 
 import {arrSaucesImg} from '../../picture'
 
-export default function Sauces({saucesData}) {
+export default function Sauces({saucesData, addBasket}) {
     const [arr, setArr] = useState(saucesData);
-    console.log(data);
+    const [isOpenModal, setIsOpenModal] = useState(false);
+    const [objModal, setObjModal] = useState({});
+
+    const openModal = () => {
+        setIsOpenModal(true);
+      };
+    
+      const closeModal = () => {
+        setIsOpenModal(false);
+      };
 
     useEffect(() => {
         addImageToCard();
@@ -29,10 +39,11 @@ export default function Sauces({saucesData}) {
             <div className="sauce__container">
                 {
                     arr.map((item, index) => (
-                        <Card item={item} key={index} />
+                        <Card addBasket={addBasket} item={item} key={index} openModal={openModal} setObjModal={setObjModal} />
                     ))
                 }
             </div>
+            {isOpenModal && <Modal closeModal={closeModal} content={objModal} />}
         </div>
     )
 }

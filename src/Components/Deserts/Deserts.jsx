@@ -4,7 +4,7 @@ import './deserts.scss'
 import Modal from '../Modal/Modal';
 import { arrDesertImg } from '../../picture'
 
-export default function Deserts({ desertsData }) {
+export default function Deserts({ desertsData, addBasket }) {
     const [isOpenModal, setIsOpenModal] = useState(false);
     const [arr, setArr] = useState(desertsData);
     const [objModal, setObjModal] = useState({});
@@ -38,7 +38,7 @@ export default function Deserts({ desertsData }) {
             <div className="deserts__container">
                 {
                     arr.map((item, index) => (
-                        <Card item={item} key={index} openModal={openModal} setObjModal={setObjModal} />
+                        <Card addBasket={addBasket} item={item} key={index} openModal={openModal} setObjModal={setObjModal} />
                     ))
                 }
             </div>

@@ -1,6 +1,6 @@
 import './card.scss'
 
-export default function Card({ item, openModal, setObjModal }) {
+export default function Card({ item, openModal, setObjModal, addBasket }) {
   return (
     <div className="card" onClick={() => {openModal(); setObjModal(item)}}>
       <div className="card__img">
@@ -10,7 +10,7 @@ export default function Card({ item, openModal, setObjModal }) {
         <p className="card__text-price">{item.price}</p>
         <p className="card__text-name">{item.name}</p>
         <p className="card__text-weight">{item.weight}</p>
-        <button className="card__text-btn">Add to basket</button>
+        <button className="card__text-btn" onClick={() => addBasket(item)}>Add to basket</button>
       </div>
     </div>
   )
