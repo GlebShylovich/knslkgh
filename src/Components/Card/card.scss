@@ -73,6 +73,13 @@
             font-weight: 400;
             line-height: 100%;
             margin-top: 8px;
+            transition: 0.3s ease-in-out;
+
+            &:hover {
+                background: #FF7020;
+                border: 1px solid #FF7020;
+                color: white;
+            }
         }
     }
 }

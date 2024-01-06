@@ -1,4 +1,5 @@
 import './basket.scss'
+import BasketItem from '../BasketItem/BasketItem';
 import scooter from '../../assets/img/basket-delivery.png'
 
 export default function Basket({ basket, plusBasket, minusBasket }) {
@@ -12,21 +13,7 @@ export default function Basket({ basket, plusBasket, minusBasket }) {
             <div className="basket__list">
                 {
                     basket.map((item, index) => (
-                        <div key={index} className="basket__item">
-                            <div className="basket__item-image">
-                                <img src={item.image} alt="img" />
-                            </div>
-                            <div className="basket__item-info">
-                                <p className='basket__item-name'>{item.name}</p>
-                                <p className='basket__item-weight'>{item.weight}</p>
-                                <p className='basket__item-price'>{item.price * item.count}</p>
-                            </div>
-                            <div className="basket__item-count">
-                                <button onClick={() => minusBasket(item.id)}>-</button>
-                                <span>{item.count}</span>
-                                <button onClick={() => plusBasket(item.id)}>+</button>
-                            </div>
-                        </div>
+                        <BasketItem key={index} item={item} minusBasket={minusBasket} plusBasket={plusBasket}/>
                     ))
                 }
             </div>

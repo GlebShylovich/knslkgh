@@ -2,18 +2,17 @@ import './App.scss'
 import Header from './Components/Header/Header'
 import Main from './Components/Main/Main'
 import Footer from './Components/Footer/Footer'
-
-import burgersData from './burgers.json'
-import hotdogsData from './hotdogs.json'
-import pizzasData from './pizza.json'
-import snacksData from './snacks.json'
-import desertsData from './deserts.json'
-import saucesData from './sauces.json'
-import shawarmaData from './shawarma.json'
+import data from './data.json'
 import { useState } from 'react'
 
 export default function App() {
-
+  let burgersData = data.burgers;
+  let hotdogsData = data.hotDogs;
+  let snacksData = data.snacks;
+  let shawarmaData = data.shawarmas;
+  let pizzasData = data.pizzas;
+  let desertsData = data.deserts;
+  let saucesData = data.sauces;
   const [basket, setBasket] = useState([]);
 
   const addBasket = (basketElem) => {
